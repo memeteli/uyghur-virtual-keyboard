@@ -1,0 +1,99 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Virtual Uyghur Keyboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/css/index.css">
+	  <link rel="stylesheet" href="./src/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<script src="src/bedit.js"></script>
+</head>
+
+<body>
+	<div class="navigator" style="background-color: #1B4996;"><h1>ئۇيغۇرچە كىرگۈزگۈچ</h1></div>
+<div class="preview2">
+    <div class="simple-keyboard-preview">
+         <textarea onKeyPress="return addchar(this, event);" onKeyDown="return proc_kd(event);"  placeholder="كونۇپكا تاختىسىنى بېسىپ كىرگۈزۈڭ..." class="input" spellcheck="false"></textarea>
+	</div>
+
+    <div class="simple-keyboard simple-keyboard hg-theme-default hg-layout-default hg-layout-default"><div class="hg-row"><div class="hg-button hg-standardBtn" data-skbtn="`" data-skbtnuid="default-r0b0"><span>`</span></div><div class="hg-button hg-standardBtn" data-skbtn="1" data-skbtnuid="default-r0b1"><span>1</span></div><div class="hg-button hg-standardBtn" data-skbtn="2" data-skbtnuid="default-r0b2"><span>2</span></div><div class="hg-button hg-standardBtn" data-skbtn="3" data-skbtnuid="default-r0b3"><span>3</span></div><div class="hg-button hg-standardBtn" data-skbtn="4" data-skbtnuid="default-r0b4"><span>4</span></div><div class="hg-button hg-standardBtn" data-skbtn="5" data-skbtnuid="default-r0b5"><span>5</span></div><div class="hg-button hg-standardBtn" data-skbtn="6" data-skbtnuid="default-r0b6"><span>6</span></div><div class="hg-button hg-standardBtn" data-skbtn="7" data-skbtnuid="default-r0b7"><span>7</span></div><div class="hg-button hg-standardBtn" data-skbtn="8" data-skbtnuid="default-r0b8"><span>8</span></div><div class="hg-button hg-standardBtn" data-skbtn="9" data-skbtnuid="default-r0b9"><span>9</span></div><div class="hg-button hg-standardBtn" data-skbtn="0" data-skbtnuid="default-r0b10"><span>0</span></div><div class="hg-button hg-standardBtn" data-skbtn="-" data-skbtnuid="default-r0b11"><span>-</span></div><div class="hg-button hg-standardBtn" data-skbtn="=" data-skbtnuid="default-r0b12"><span>=</span></div><div class="hg-button hg-functionBtn hg-button-bksp" data-skbtn="{bksp}" data-skbtnuid="default-r0b13"><span>backspace</span></div></div><div class="hg-row"><div class="hg-button hg-functionBtn hg-button-tab" data-skbtn="{tab}" data-skbtnuid="default-r1b0"><span>tab</span></div><div class="hg-button hg-standardBtn" data-skbtn="q" data-skbtnuid="default-r1b1"><span>q</span></div><div class="hg-button hg-standardBtn" data-skbtn="w" data-skbtnuid="default-r1b2"><span>w</span></div><div class="hg-button hg-standardBtn" data-skbtn="e" data-skbtnuid="default-r1b3"><span>e</span></div><div class="hg-button hg-standardBtn" data-skbtn="r" data-skbtnuid="default-r1b4"><span>r</span></div><div class="hg-button hg-standardBtn" data-skbtn="t" data-skbtnuid="default-r1b5"><span>t</span></div><div class="hg-button hg-standardBtn" data-skbtn="y" data-skbtnuid="default-r1b6"><span>y</span></div><div class="hg-button hg-standardBtn" data-skbtn="u" data-skbtnuid="default-r1b7"><span>u</span></div><div class="hg-button hg-standardBtn" data-skbtn="i" data-skbtnuid="default-r1b8"><span>i</span></div><div class="hg-button hg-standardBtn" data-skbtn="o" data-skbtnuid="default-r1b9"><span>o</span></div><div class="hg-button hg-standardBtn" data-skbtn="p" data-skbtnuid="default-r1b10"><span>p</span></div><div class="hg-button hg-standardBtn" data-skbtn="[" data-skbtnuid="default-r1b11"><span>[</span></div><div class="hg-button hg-standardBtn" data-skbtn="]" data-skbtnuid="default-r1b12"><span>]</span></div><div class="hg-button hg-standardBtn" data-skbtn="\" data-skbtnuid="default-r1b13"><span>\</span></div></div><div class="hg-row"><div class="hg-button hg-functionBtn hg-button-lock" data-skbtn="{lock}" data-skbtnuid="default-r2b0"><span>caps</span></div><div class="hg-button hg-standardBtn" data-skbtn="a" data-skbtnuid="default-r2b1"><span>a</span></div><div class="hg-button hg-standardBtn" data-skbtn="s" data-skbtnuid="default-r2b2"><span>s</span></div><div class="hg-button hg-standardBtn" data-skbtn="d" data-skbtnuid="default-r2b3"><span>d</span></div><div class="hg-button hg-standardBtn" data-skbtn="f" data-skbtnuid="default-r2b4"><span>f</span></div><div class="hg-button hg-standardBtn" data-skbtn="g" data-skbtnuid="default-r2b5"><span>g</span></div><div class="hg-button hg-standardBtn" data-skbtn="h" data-skbtnuid="default-r2b6"><span>h</span></div><div class="hg-button hg-standardBtn" data-skbtn="j" data-skbtnuid="default-r2b7"><span>j</span></div><div class="hg-button hg-standardBtn" data-skbtn="k" data-skbtnuid="default-r2b8"><span>k</span></div><div class="hg-button hg-standardBtn" data-skbtn="l" data-skbtnuid="default-r2b9"><span>l</span></div><div class="hg-button hg-standardBtn" data-skbtn=";" data-skbtnuid="default-r2b10"><span>;</span></div><div class="hg-button hg-standardBtn" data-skbtn="'" data-skbtnuid="default-r2b11"><span>'</span></div><div class="hg-button hg-functionBtn hg-button-enter" data-skbtn="{enter}" data-skbtnuid="default-r2b12"><span>&lt; enter</span></div></div><div class="hg-row"><div class="hg-button hg-functionBtn hg-button-shift" data-skbtn="{shift}" data-skbtnuid="default-r3b0"><span>shift</span></div><div class="hg-button hg-standardBtn" data-skbtn="z" data-skbtnuid="default-r3b1"><span>z</span></div><div class="hg-button hg-standardBtn" data-skbtn="x" data-skbtnuid="default-r3b2"><span>x</span></div><div class="hg-button hg-standardBtn" data-skbtn="c" data-skbtnuid="default-r3b3"><span>c</span></div><div class="hg-button hg-standardBtn" data-skbtn="v" data-skbtnuid="default-r3b4"><span>v</span></div><div class="hg-button hg-standardBtn" data-skbtn="b" data-skbtnuid="default-r3b5"><span>b</span></div><div class="hg-button hg-standardBtn" data-skbtn="n" data-skbtnuid="default-r3b6"><span>n</span></div><div class="hg-button hg-standardBtn" data-skbtn="m" data-skbtnuid="default-r3b7"><span>m</span></div><div class="hg-button hg-standardBtn" data-skbtn="," data-skbtnuid="default-r3b8"><span>,</span></div><div class="hg-button hg-standardBtn" data-skbtn="." data-skbtnuid="default-r3b9"><span>.</span></div><div class="hg-button hg-standardBtn" data-skbtn="/" data-skbtnuid="default-r3b10"><span>/</span></div><div class="hg-button hg-functionBtn hg-button-shift" data-skbtn="{shift}" data-skbtnuid="default-r3b11"><span>shift</span></div></div><div class="hg-row"><div class="hg-button hg-standardBtn" data-skbtn=".com" data-skbtnuid="default-r4b0"><span>.com</span></div><div class="hg-button hg-standardBtn" data-skbtn="@" data-skbtnuid="default-r4b1"><span>@</span></div><div class="hg-button hg-functionBtn hg-button-space" data-skbtn="{space}" data-skbtnuid="default-r4b2"><span> </span></div></div></div>
+	<div class="buttons">
+		<button type="button" class="copy-button">تېكىست كۆچۈرۈۋېلىش</button>
+	</div>
+			<div id='pdfLink'></div>
+
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/simple-keyboard@latest/build/index.min.js"></script>
+	<script type="text/javascript" src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.2.0/jspdf.umd.min.js"></script>
+
+  	<script type="module">
+		  
+
+
+  let SimpleKeyboard = window.SimpleKeyboard.default;
+
+  let keyboard = new SimpleKeyboard({
+    onKeyPress: (button) => onKeyPress(button),
+    layout: {
+
+      default: [
+        "` 1 2 3 4 5 6 7 8 9 0 - = {bksp}",
+        "{tab} \u0686 \u06CB \u06D0 \u0631 \u062A \u064A \u06C7 \u06AD \u0648 \u067E ] [ /",
+        "{lock} \u06BE \u0633 \u062F \u0627 \u06D5 \u0649 \u0642 \u0643 \u0644 \u061B : {enter}",
+        "{shift} \u0632 \u0634 \u063A \u06C8 \u0628 \u0646 \u0645 \u060C . \u0626 {shift}",
+        ".com @ {space}",
+      ],
+      shift: [
+        "~ ! @ # $ % ^ & * ) ( - + {bksp}",
+        "{tab} \u0686 \u06CB \u06D0 \u0631 \u062A \u064A \u06C7 \u06AD \u0648 » « \\",
+        "{lock} \u06BE \u0633 \u0698 \u0641 \u06AF \u062E \u062C \u06C6 \u0644 \u061B | {enter}",
+        "{shift} \u0632 \u0634 \u063A \u06C8 \u0628 \u0646 \u0645 \u2039 \u203A \u061F {shift}",
+        ".com @ {space}",
+      ],
+    },
+  });
+
+  /**
+   * Update simple-keyboard when input is changed directly
+   */
+
+  function onChange(input) {
+	document.querySelector(".input").value = input;
+	console.log("Input changed", input);
+  }
+
+  function onKeyPress(button) {
+	  			let $textInput = $('.input')
+                  var inputOldText = $textInput.val();
+                  $textInput.val(`${inputOldText}${button}`);
+                  $textInput.focus();
+                  $textInput.trigger("change");
+
+    /**
+     * If you want to handle the shift and caps lock buttons
+     */
+    if (button === "{shift}" || button === "{lock}") handleShift();
+  }
+
+  function handleShift() {
+    let currentLayout = keyboard.options.layoutName;
+    let shiftToggle = currentLayout === "default" ? "shift" : "default";
+    keyboard.setOptions({
+      layoutName: shiftToggle,
+    });
+  }
+
+  function copytext() {
+	   $('.input').select();      
+    document.execCommand("copy");
+  }
+
+  $('.copy-button').on('click', copytext);
+</script>
+</body>
+
+</html>

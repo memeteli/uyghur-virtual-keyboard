@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'UKIJ Tor';
+  src: url('./src/UKIJTor.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navigator {
+  margin-top: 120px;
+      font-family: 'UKIJ Tuz',
+      sans-serif;
+    max-width: 850px;
+    margin: 0 auto;
+    color:#fff;
+    padding:10px 0;
+  text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.buttons {
+  width: 100%;
+  display:-webkit-inline-box;
+    max-width: 850px;
+    margin: 0 auto;
+    display: inline-box;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
+.preview2
+ {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+
+.simple-keyboard-preview {
+  background: #2e2e2e;
+  border: 20px solid rgba(0, 0, 0, .1);
+  min-height: 400px;
+  max-height: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.simple-keyboard-preview textarea {
+  padding: 20px;
+    min-height: 400px;
+
+  height: 100%;
+
+}
+
+.input {
+  direction: rtl;
+  color: hsla(0, 0%, 100%, .9);
+  background: 0 0;
+  border: none;
+  outline: 0;
+  font-family: "UKIJ Tuz";
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+.simple-keyboard.hg-theme-default {
+  display: inline-block;
+}
+
+.simple-keyboard {
+  font-size: 16px;
+}
+
+.hg-theme-default {
+  font-family: "UKIJ Tuz",
+  "Helvetica Neue Light",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  "Lucida Grande",
+  sans-serif;
+  background-color: #ececec;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hg-theme-default {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hg-theme-default .hg-row:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hg-theme-default .hg-row {
+  display: flex;
+}
+
+/*!
+ * 
+ *   simple-keyboard v2.32.63
+ *   https://github.com/hodgef/simple-keyboard
+ * 
+ *   Copyright (c) Francisco Hodge (https://github.com/hodgef)
+ * 
+ *   This source code is licensed under the MIT license found in the
+ *   LICENSE file in the root directory of this source tree.
+ *   
+ */
+.hg-theme-default {
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  touch-action: manipulation
+}
+
+.hg-theme-default .hg-button span {
+  pointer-events: none
+}
+
+.hg-theme-default button.hg-button {
+  border-width: 0;
+  outline: 0;
+  font-size: inherit
+}
+
+.hg-theme-default {
+  font-family: "UKIJ Tuz",
+  "Helvetica Neue Light",
+  "Helvetica Neue",
+  Helvetica,
+  Arial,
+  "Lucida Grande",
+  sans-serif;
+  background-color: #ececec;
+  padding: 5px;
+  border-radius: 5px
+}
+
+.hg-theme-default .hg-button {
+  display: inline-block;
+  flex-grow: 1
+}
+
+.hg-theme-default .hg-row {
+  display: flex
+}
+
+.hg-theme-default .hg-row:not(:last-child) {
+  margin-bottom: 5px
+}
+
+.hg-theme-default .hg-row .hg-button-container,
+.hg-theme-default .hg-row .hg-button:not(:last-child) {
+  margin-right: 5px
+}
+
+.hg-theme-default .hg-row>div:last-child {
+  margin-right: 0
+}
+
+.hg-theme-default .hg-row .hg-button-container {
+  display: flex
+}
+
+.hg-theme-default .hg-button {
+  box-shadow: 0 0 3px -1px rgba(0, 0, 0, .3);
+  height: 40px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px;
+  background: #fff;
+  border-bottom: 1px solid #b5b5b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+.hg-theme-default .hg-button.hg-activeButton {
+  background: #efefef
+}
+
+.hg-theme-default.hg-layout-numeric .hg-button {
+  width: 33.3%;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: center
+}
+
+.hg-theme-default .hg-button.hg-button-numpadadd,
+.hg-theme-default .hg-button.hg-button-numpadenter {
+  height: 85px
+}
+
+.hg-theme-default .hg-button.hg-button-numpad0 {
+  width: 105px
+}
+
+.hg-theme-default .hg-button.hg-button-com {
+  max-width: 85px
+}
+
+.hg-theme-default .hg-button.hg-standardBtn.hg-button-at {
+  max-width: 45px
+}
+
+.hg-theme-default .hg-button.hg-selectedButton {
+  background: rgba(5, 25, 70, .53);
+  color: #fff
+}
+
+.hg-theme-default .hg-button.hg-standardBtn[data-skbtn=".com"] {
+  max-width: 82px
+}
+
+.hg-theme-default .hg-button.hg-standardBtn[data-skbtn="@"] {
+  max-width: 60px
+}
+
+.copy-button,
+.pdf-button {
+  display: block;
+    width:100%;
+    font-size: 16px;
+    background: #1b4996;
+    padding: 15px 20px;
+    color: #fff;
+    border: none;
+    font-family: 'UKIJ Tuz';
+    
+}

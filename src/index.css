@@ -23,8 +23,8 @@
 }
 
 .buttons {
-  width: 100%;
-  display:-webkit-inline-box;
+    width: 100%;
+    display:-webkit-inline-box;
     max-width: 850px;
     margin: 0 auto;
     display: inline-box;
@@ -41,7 +41,6 @@
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  
 }
 
 
@@ -60,10 +59,8 @@
 
 .simple-keyboard-preview textarea {
   padding: 20px;
-    min-height: 400px;
-
-  height: 100%;
-
+  min-height: 300px;
+  max-height: 60;
 }
 
 .input {

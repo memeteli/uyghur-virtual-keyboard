@@ -11,7 +11,7 @@
     "simple-keyboard": "latest"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.6.1"
+    "parcel-bundler": "1.10.3"
   },
   "keywords": [
     "virtual",
